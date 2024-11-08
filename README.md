@@ -11,10 +11,9 @@ The project uses multiple APIs, including OpenAI's GPT API and Google's Gemini A
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Future Work](#future-work)
-- [License](#license)
 
 ## Files Overview
-
+### In src:
 ### 1. `Geminiprompts.py`
 This script utilizes the Google Gemini API for generating content and analyzing software-related articles. It connects to the Gemini API using the `gemini-1.5-pro-latest` model to generate summaries, identify key vulnerabilities, and classify information.
 
@@ -32,6 +31,8 @@ This script focuses on utilizing the OpenAI GPT API for content generation. It u
 - Extracts insights from articles related to software vulnerabilities and incidents.
 - Includes functionality for categorizing incidents into predefined categories like negligence, malicious maintainers, attack chaining, etc.
 - Uses metrics like Cohen's Kappa Score for evaluating classification consistency.
+
+### In data:
 
 ### 3. `articles.py`
 Contains a collection of software-related articles used for testing the Gemini and GPT models. These articles describe real-world incidents involving software vulnerabilities, supply chain attacks, and other cybersecurity issues.
