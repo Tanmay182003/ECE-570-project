@@ -11,7 +11,6 @@ The project uses multiple APIs, including OpenAI's GPT API and Google's Gemini A
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Future Work](#future-work)
-- [License](#license)
 
 ## Files Overview
 ### In src:
