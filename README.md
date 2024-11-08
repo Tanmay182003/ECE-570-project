@@ -96,6 +96,3 @@ pip install openai bardapi google-generativeai openpyxl matplotlib scikit-learn 
 - Improve the classification accuracy by fine-tuning the prompts for GPT and Gemini models.
 - Expand the dataset with more articles to enhance model training.
 - Integrate additional metrics for performance evaluation.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
