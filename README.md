@@ -87,10 +87,6 @@ Excel files used for manual classification, data analysis, and evaluation of mod
 - `scikit-learn`
 - `dotenv`
 
-Install the dependencies using:
-```bash
-pip install openai bardapi google-generativeai openpyxl matplotlib scikit-learn python-dotenv
-```
 
 ## Future Work
 - Improve the classification accuracy by fine-tuning the prompts for GPT and Gemini models.
