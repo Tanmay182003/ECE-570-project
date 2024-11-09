@@ -6,18 +6,12 @@ This script demonstrates the usage of Gemini models via the Google API for conte
 # ----------------------------
 # IMPORTS
 # ----------------------------
-from bardapi import Bard
-import os
-import re
+
 import openpyxl
-import subprocess
-import json
 import google.generativeai as gai
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv('C:\\Users\\tanma\\OneDrive - purdue.edu\\Desktop\\Purdue academics\\FA24\\ECE 570\\project\\.env')
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())
 
 # Access the API key
 api_key = os.getenv("API_KEY")
