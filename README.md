@@ -3,7 +3,7 @@
 ## Overview
 This project leverages Large Language Models (LLMs) like GPT-4 and Gemini to classify and analyze software failure incidents. The primary objective is to automate the summarization, categorization, and extraction of key information from articles related to software vulnerabilities, supply chain attacks, and other cyber incidents.
 
-The project uses multiple APIs, including OpenAI's GPT API and Google's Gemini API, to generate content, categorize articles, and perform data analysis. It utilizes environment variables to securely manage API keys.
+The project uses multiple APIs, including OpenAI's GPT API and Google's Gemini API, to generate content, categorize articles, and analyse data. It utilizes environment variables to manage API keys securely.
 
 ## Table of Contents
 - [Files Overview](#files-overview)
@@ -15,7 +15,7 @@ The project uses multiple APIs, including OpenAI's GPT API and Google's Gemini A
 ## Files Overview
 ### In src:
 ### 1. `Geminiprompts.py`
-This script utilizes the Google Gemini API for generating content and analyzing software-related articles. It connects to the Gemini API using the `gemini-1.5-pro-latest` model to generate summaries, identify key vulnerabilities, and classify information.
+This script utilizes the Google Gemini API to generate content and analyze software-related articles. It connects to the Gemini API using the `gemini-1.5-pro-latest` model to generate summaries, identify key vulnerabilities, and classify information.
 
 **Key Features:**
 - Configures Gemini models using an API key stored in environment variables.
@@ -24,7 +24,7 @@ This script utilizes the Google Gemini API for generating content and analyzing 
 - Demonstrates the usage of the Gemini models for content generation and analysis.
 
 ### 2. `Gpt4oPrompts.py`
-This script focuses on utilizing the OpenAI GPT API for content generation. It uses the `gpt-4o` model to analyze software articles, classify incidents, and generate summaries.
+This script focuses on utilizing the OpenAI GPT API for content generation. It uses the `GPT-4o` model to analyze software articles, classify incidents, and generate summaries.
 
 **Key Features:**
 - Configures GPT models using environment variables for secure access.
@@ -81,17 +81,12 @@ Excel files used for manual classification, data analysis, and evaluation of mod
 
 - Python 3.8+
 - `openai`
-- `bardapi`
 - `google-generativeai`
 - `openpyxl`
 - `matplotlib`
 - `scikit-learn`
 - `dotenv`
 
-Install the dependencies using:
-```bash
-pip install openai bardapi google-generativeai openpyxl matplotlib scikit-learn python-dotenv
-```
 
 ## Future Work
 - Improve the classification accuracy by fine-tuning the prompts for GPT and Gemini models.
