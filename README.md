@@ -77,17 +77,6 @@ Excel files used for manual classification, data analysis, and evaluation of mod
    ```
    This will categorize articles and extract insights using the GPT API.
 
-## Dependencies
-
-- Python 3.8+
-- `openai`
-- `google-generativeai`
-- `openpyxl`
-- `matplotlib`
-- `scikit-learn`
-- `dotenv`
-
-
 ## Future Work
 - Improve the classification accuracy by fine-tuning the prompts for GPT and Gemini models.
 - Expand the dataset with more articles to enhance model training.
