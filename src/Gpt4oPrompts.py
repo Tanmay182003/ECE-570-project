@@ -9,8 +9,6 @@ from openai import OpenAI
 import os
 import re
 import openpyxl
-import matplotlib.pyplot as plt
-from sklearn.metrics import cohen_kappa_score
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())
 
@@ -351,20 +349,6 @@ def intent():
         print(response)
         i += 1
     # workbook.save("IntentGPT.xlsx")
-    return
-
-
-def kappa():
-    p1 = [2,2,1,2,2,2,2,3,2,2,3,2,2,2,2,2,2]
-    p2 = [2,2,1,2,1,3,2,3,2,2,3,2,1,2,2,2,2]
-    jamie_list = [3,6,6,6,6,1,4,1,6,3,5,7,1,3]
-    cncf_list = [4,2,1,1,6,1,1,1,4,3,3,7,1,3]
-    tanmay_list = [3,6,6,4,6,1,4,1,6,3,5,7,1,4]
-    GPT_list =    [3,6,4,3,4,3,4,4,6,4,5,3,3,4]
-    print(len(cncf_list))
-    print(len(GPT_list))
-    label = [1, 2, 3, 4,5, 6,7]
-    print(cohen_kappa_score(cncf_list, GPT_list, labels=label, weights=None, sample_weight=None))
     return
 
 type()
